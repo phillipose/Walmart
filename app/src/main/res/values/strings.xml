@@ -1,0 +1,17 @@
+    <resources>
+        <!-- Main Activity -->
+        <string name="app_name">WalmartStore</string>
+        <string name="loginMessage">Sign in to your account</string>
+        <string name="emailInput">Email address (required)</string>
+        <string name="passwordInput">Password (required)</string>
+        <string name="forget_Text">Forget your password?</string>
+
+        <string name="hintEmail">Enter your email address here ...</string>
+        <string name="hintPass">Enter your password here ...</string>
+        <string name="noHint">""</string>
+        <string name="sign_Btn">Sign in</string>
+        <string name="signUpText">"======  Don't have an account ?  ======"</string>
+        <string name="signUp">Create a new account</string>
+
+
+    </resources>

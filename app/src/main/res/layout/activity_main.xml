@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="97dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/walmart" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/loginMessage"
+        android:textColor="#121212"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="29dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/email_Text"
+            style="@style/formStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/emailInput" />
+
+        <EditText
+            android:id="@+id/email_Input"
+            style="@style/in_SBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/noHint"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/password_Text"
+            style="@style/formStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/passwordInput" />
+
+        <EditText
+            android:id="@+id/password_Input"
+            style="@style/in_SBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/noHint"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/forgetText"
+            android:onClick="forget_Password"
+            style="@style/in_SBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:autoLink="all"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/forget_Text" />
+
+        <Button
+            android:id="@+id/sign_Btn"
+            android:onClick="signIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_Btn"
+            android:layout_marginTop="20dp"
+           android:background="@drawable/custom_rounded_corners"
+            android:textColor="#FFFFFF"
+            style="@style/in_SBox"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/Dont_Have_Account_Text"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signUpText"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            style="@style/in_SBox"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/Create_Account_btn"
+            android:onClick="Create_Account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signUp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_rounded_corners"
+            android:textColor="#FFFFFF"
+            style="@style/in_SBox"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+</LinearLayout>
